@@ -1,5 +1,14 @@
+.christian-cross-indicator {
+    padding: 0 6px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
 
-.cross-icon {
+.christian-cross-indicator:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.christian-cross-icon {
     font-size: 16px;
-    margin: 0 5px;
-  }
+    color: white;
+}
