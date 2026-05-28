@@ -21,5 +21,15 @@
       <summary>Show cross</summary>
       <description>Whether to show the cross in the panel.</description>
     </key>
+    <key name="cross-color" type="s">
+      <default>'#ffffff'</default>
+      <summary>Cross color</summary>
+      <description>The color of the cross icon.</description>
+    </key>
+    <key name="bg-color" type="s">
+      <default>'rgba(255, 255, 255, 0)'</default>
+      <summary>Background color</summary>
+      <description>The background color of the indicator.</description>
+    </key>
   </schema>
 </schemalist>
