@@ -29,6 +29,7 @@ export default class ChristianCrossExtension extends Extension {
         this._logger = typeof this.getLogger === 'function' ? this.getLogger() : console;
         this._logger.info(`Enabling ${this.metadata.name}`);
 
+        this.initTranslations();
         this._settings = this.getSettings();
         
         // Add to panel (this will create the indicator)
@@ -73,6 +74,10 @@ export default class ChristianCrossExtension extends Extension {
                     this._indicator = null;
                 }
             });
+            
+            // In case of immediate disabling during animation
+            // we should still ensure it eventually gets destroyed
+            // but the onComplete handler above is standard.
         }
 
         this._settings = null;
